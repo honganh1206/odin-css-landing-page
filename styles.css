@@ -5,29 +5,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
 }
+/* Header */ 
 .header {
     height: 72px;
     background: #1f2937;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    font-weight: 900;
+    color: #e4e2de;
+    
     padding: 15px;
 }
 .logo {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 48px;
+    font-weight: bold;
 }
-.content {
+/* Preview */ 
+.panel {
+    background-color: #1f2937 ;
+    color: #e4e2de;
     display: flex;
-    flex: 1;
-}
-.sidebar {
-    width: 300px;
-    background: #333333;
-    
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
 }
 ul {
     display: flex;
@@ -38,42 +41,67 @@ ul {
     padding: 0;
     gap: 16px
 }
+.descri-cta{
+    text-align: left;
+    margin: 0;
+}
+.descri-image img{
+    text-align: center;
+    height: 350px;
+    width:auto;
+}
+button {
+    display: block;
+    text-align: center;
+    background-color: #0846a8;
+    color: #e8e6e3;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100px;
+    font-weight: bold;
+    border-color: #0846a8;
+}
+/* List of albums */ 
+.albums {
+    background-color: #131516;
+}
 .right-links li {
     font-size: 18px;
     text-decoration: none;
 }
-.descri-image img {
-    height: 350px;
-    width:auto;
-}
 a {
-    color: white;
+    color: #e4e2de;
     text-decoration: none;
 }
 .albums {
     width: 100%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    color:#e8e6e3;
 }
-.album {
-border: 1px solid #eee;
-box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-border-radius: 4px;
-/* somehow these lines rearrange 
-the content into cards */
-padding: 16px;
-margin: 16px;
-width: 300px;
+h2 {
+    text-align: center;
+}
+.album-info {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .album img {
+    border: 5px solid currentColor;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 8px;
     width: 200px;
     height:auto;
+    justify-content: space-evenly;
+    margin: 10px;
 }
 .footer {
     height: 72px;
     background: #1f2937;
-    color: #ffffff;
+    color: #e4e2de;
     display: flex;
     justify-content: center;
     align-items: center;
