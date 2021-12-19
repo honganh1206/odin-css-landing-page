@@ -1,21 +1,25 @@
+html {
+    background-color: #1e1510;
+}
 body {
     font-family: Roboto, sans-serif;
     margin: 0;
     min-height: 100vh;
+    text-align: center;
+}
+.container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
 }
 /* Header */ 
 .header {
     height: 72px;
-    background: #1f2937;
+    background: #fbc91b;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #e4e2de;
-    
+    color: #2a1909;
     padding: 15px;
 }
 .logo {
@@ -23,10 +27,14 @@ body {
     font-size: 48px;
     font-weight: bold;
 }
+.right-links li {
+    font-size: 18px;
+    text-decoration: none;
+}
 /* Preview */ 
 .panel {
-    background-color: #1f2937 ;
-    color: #e4e2de;
+    background-color: #171312 ;
+    color: #fbc91b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +42,7 @@ body {
 }
 ul {
     display: flex;
+    color: #2a1909;
     /* get rid of list style 
     (the dot before the list items */
     list-style: none;
@@ -53,24 +62,18 @@ ul {
 button {
     display: block;
     text-align: center;
-    background-color: #0846a8;
-    color: #e8e6e3;
+    background-color: #f4d652;
+    color: #131516;
     padding: 12px;
     border-radius: 10px;
     width: 100px;
     font-weight: bold;
-    border-color: #0846a8;
+    border-color: currentColor;
 }
 /* List of albums */ 
-.albums {
-    background-color: #131516;
-}
-.right-links li {
-    font-size: 18px;
-    text-decoration: none;
-}
+
 a {
-    color: #e4e2de;
+    color: #2a1909;
     text-decoration: none;
 }
 .albums {
@@ -78,7 +81,6 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 20px;
     color:#e8e6e3;
 }
 h2 {
@@ -91,18 +93,55 @@ h2 {
 }
 .album img {
     border: 5px solid currentColor;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    box-shadow: 2px 4px 16px #0000000f;
     border-radius: 8px;
     width: 200px;
     height:auto;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     margin: 10px;
+}
+.album p {
+    font-weight: bold;
+    text-align: center;
+    /* break long texts into 2 lines */
+    inline-size: 200px;
+    overflow-wrap: break-word;
+}
+/* Quote */
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #191a1a;
+    color: #e4e2de;
+}
+.quote p {
+    font-size: 32px;
+    font-style:italic;
+    font-weight: lighter;
+}
+.quote b {
+    text-align: right;
+    padding-right: 300px;
+    padding-bottom: 20px;
+}
+/* sign-up */
+.sign-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4d652;
+    margin: 50px 200px;
+    padding: 10px 80px;
+    color: #131516;
+}
+.sign-texts {
+    text-align: left;
 }
 .footer {
     height: 72px;
-    background: #1f2937;
+    background: #171312;
     color: #e4e2de;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
