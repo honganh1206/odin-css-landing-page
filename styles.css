@@ -1,0 +1,80 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header {
+    height: 72px;
+    background: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    padding: 15px;
+}
+.logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 48px;
+}
+.content {
+    display: flex;
+    flex: 1;
+}
+.sidebar {
+    width: 300px;
+    background: #333333;
+    
+}
+ul {
+    display: flex;
+    /* get rid of list style 
+    (the dot before the list items */
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    gap: 16px
+}
+.right-links li {
+    font-size: 18px;
+    text-decoration: none;
+}
+.descri-image img {
+    height: 350px;
+    width:auto;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.albums {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.album {
+border: 1px solid #eee;
+box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+border-radius: 4px;
+/* somehow these lines rearrange 
+the content into cards */
+padding: 16px;
+margin: 16px;
+width: 300px;
+}
+.album img {
+    width: 200px;
+    height:auto;
+}
+.footer {
+    height: 72px;
+    background: #1f2937;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
